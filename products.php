@@ -71,6 +71,7 @@
 </head>
 
 <body>
+
     <div class="indoor">
         <div class="cart">
 
@@ -90,7 +91,7 @@
                     <h2 class="plant-name">Croton</h2>
                     <p class="price">450 Rs</p>
 
-                    <button class="add-to-cart btn btn-outline-success fw-semi-bold">
+                    <button class="add-to-cart btn btn-outline-success  Croton-btn  fw-semi-bold">
                         Add to Cart
                     </button>
                 </div>
@@ -1054,6 +1055,7 @@
             </div>
 
         </div>
+        <div class="cartmenu "></div>
         <i class="bi bi-list display-1 -absolute">
 
         </i>

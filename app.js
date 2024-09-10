@@ -3,19 +3,12 @@ let btn = document.querySelectorAll(".btn-outline-success");
 let cart = document.querySelector(".bi-cart-plus-fill");
 let text = document.querySelector(".text");
 let number = 0;
-
+let cart_menu = document.querySelector(".cartmenu");
 btn.forEach((item, index) => {
   item.addEventListener("click", () => {
-    number++;
-    let result = number;
-    if (number > 9) {
-      result = number;
-    } else if (number < 9) {
-      result = `${0}${result}`;
-    } else {
-      result = "09";
-    }
-    text.innerHTML = result;
+    let menu = document.createElement("div");
+    menu.classList.add(".display");
+    console.log(menu);
   });
 });
 
@@ -29,6 +22,16 @@ button.addEventListener("click", () => {
     underlay.style.transition = "1.2s all";
   } else {
     underlay.style.transform = "translateX(-120%)";
+
     underlay.style.transition = "1.2s all";
   }
+});
+
+let title = document.createElement("h1");
+title.innerHTML = "Add To Cart";
+title.classList.add("title1");
+title.style.fontWeight = "bold";
+cart_menu.appendChild(title);
+cart.addEventListener("click", () => {
+  cart_menu.classList.toggle("cartmove");
 });
