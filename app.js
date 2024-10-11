@@ -11,16 +11,31 @@ let anchor = document.querySelectorAll(".anchor");
 let item = document.querySelector(".content_2");
 
 let underlay_2 = document.querySelector(".underlay2");
+let media = document.querySelector(".media");
 
 button.addEventListener("click", () => {
   if (!bar.classList.contains("move")) {
     bar.classList.toggle("move");
+
     underlay.style.transform = "translateX(0px)";
     underlay.style.transition = "1.2s all";
   } else {
     bar.classList.toggle("move");
     underlay.style.transform = "translateX(-120%)";
     underlay.style.transition = "1.2s all";
+  }
+  media.classList.toggle("mediamove");
+  media.style.display = "block";
+
+  if (!bar.classList.contains("move")) {
+    media.style.display = "none";
+    item.style.display = "none";
+    item.style.transition = "0.2s all";
+    item.classList.remove("flex");
+  } else {
+    item.style.display = "block";
+    item.style.transition = "0.2s all";
+    item.classList.add("flex");
   }
 });
 

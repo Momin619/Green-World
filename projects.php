@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./components.css">
+    <link rel="icon" href="pics/a_cool_logo_of_a_plant_website_for_menu_bar_with_title_green_world.jpeg">
+    <!-- todo link of cdn of bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./project.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projects</title>
 </head>
 
 <body>
@@ -14,7 +18,8 @@
         <h1 class="heading">Discover our Projects</h1>
     </div>
 
-    <!-- Slider Section -->
+    <!-- todo slider section-->
+
 
     <div class="slider">
         <div class="list">
@@ -128,7 +133,7 @@
                 <img src="Projects for Green world\pics\forest-garden.jpeg" alt="" />
 
                 <div class="content content4">
-                    <div class="title_cards">Modern Forset Garden </div>
+                    <div class="title_cards">Modern Forest Garden </div>
                     <div class="type"></div>
                     <div class="description">
                         <p>A forest garden is a type of garden that mimics nature, combining trees, shrubs, perennials,
@@ -187,6 +192,36 @@
         </div>
     </div>
 
+
+    <!-- todo sidebar -->
+
+    <i class="bi bi-list display-1"></i>
+
+    <div class="shadow underlay">
+        <div class="sidebar">
+            <div class="content_1">
+                <a href="./index.php" class="home">Home</a>
+                <a href="./about-us.php" class="about_us">About Us</a>
+                <a href="./products.php" class="products_1">Products</a>
+                <a href="./form.php" class="order_1">Order</a>
+                <a href="./projects.php" class="">Projects</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="media">
+        <a href="./index.php" class="home">Home</a>
+        <a href="./about-us.php" class="about_us">About Us</a>
+        <a href="./products.php" class="products_1">Products</a>
+        <a href="./form.php" class="order_1">Order</a>
+        <a href="./projects.php" class="">Projects</a>
+    </div>
+
+    <!-- fixme javascript sources -->
+
+
+    <script src="./app.js"></script>
     <script src="Projects for Green world\app.js"></script>
 </body>
 

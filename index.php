@@ -44,7 +44,7 @@
                     <span class="navbar-toggler-icon text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav d-lg-flex gap-lg-3 gap-sm-0 media">
+                    <ul class="navbar-nav d-lg-flex gap-lg-3 d-sm-flex gap-sm-1 media">
                         <li class="nav-item">
                             <a id="one" class="nav-link active text-white" aria-current="page"
                                 href="./index.php">Home</a>

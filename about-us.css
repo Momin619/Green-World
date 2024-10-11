@@ -220,6 +220,8 @@ hr {
     top: 15%;
     transition: 1.6s all;
     z-index: 2222222999999922;
+    display: flex;
+    gap: 1rem;
   }
 
   .content a {
