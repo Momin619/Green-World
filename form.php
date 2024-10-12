@@ -19,7 +19,7 @@
         <img src="Files/green-leaves-plant-aesthetic-5k-3840x2160-3559.jpg" alt="" width="400px">
     </div>
     <div class="form">
-        <form action="./order-information.php" method="post">
+        <form action="./admin-panel.php" method="post">
 
             <div class="heading">
                 <h1>Order Your Plants</h1>
@@ -36,40 +36,40 @@
             <input name="city" required type="text" placeholder="City" />
             <label for="">Plants</label>
             <div class="selectors">
-                <select name="" id="">
-                    <option value="1">Indoor</option>
-                    <option value="">Alocasia</option>
-                    <option value="">Aglonema</option>
-                    <option value="">Alo Vera</option>
-                    <option value="">Croton</option>
-                    <option value="">Dracena</option>
-                    <option value="">Money Plant</option>
-                    <option value="">Spider</option>
-                    <option value="">Snake</option>
-                    <option value="">Song of India</option>
-                    <option value="">Syngonium</option>
-                    <option value="">Rubber Plant</option>
-                    <option value="">Rheo Plant</option>
-                    <option value="">Zz Plant</option>
+                <select name="indoor_plant" id="">
+                    <option value="">Indoor</option>
+                    <option value="Alocasia">Alocasia</option>
+                    <option value="Aglonema">Aglonema</option>
+                    <option value="Alo Vera">Alo Vera</option>
+                    <option value="Croton">Croton</option>
+                    <option value="Dracena">Dracena</option>
+                    <option value="Money Plant">Money Plant</option>
+                    <option value="Spider">Spider</option>
+                    <option value="Snake">Snake</option>
+                    <option value="Song of India">Song of India</option>
+                    <option value="Syngonium">Syngonium</option>
+                    <option value="Rubber Plant">Rubber Plant</option>
+                    <option value="Rheo Plant">Rheo Plant</option>
+                    <option value="Zz Plant">Zz Plant</option>
                 </select>
 
-                <select name="" id="">
+                <select name="outdoor_plant" id="">
                     <option value="1">Outdoor</option>
-                    <option value="">Bougonvelia</option>
-                    <option value="">Begonia</option>
-                    <option value="">Copperleaf</option>
-                    <option value="">Caladium</option>
-                    <option value="">Canna Lily</option>
-                    <option value="">Coleus</option>
-                    <option value="">Crown of Throns</option>
-                    <option value="">Dahlia</option>
-                    <option value="">Fiscus</option>
-                    <option value="">Geranium</option>
-                    <option value="">Hibiscus</option>
-                    <option value="">Jasmine</option>
-                    <option value="">Lantanus</option>
-                    <option value="">Morning Glory</option>
-                    <option value="">Rose</option>
+                    <option value="Bougonvelia">Bougonvelia</option>
+                    <option value="Begonia">Begonia</option>
+                    <option value="Copperleaf">Copperleaf</option>
+                    <option value="Caladium">Caladium</option>
+                    <option value="Canna Lily">Canna Lily</option>
+                    <option value="Coleus">Coleus</option>
+                    <option value="Crown of Throns">Crown of Throns</option>
+                    <option value="Dahlia">Dahlia</option>
+                    <option value="Fiscus">Fiscus</option>
+                    <option value="Geranium">Geranium</option>
+                    <option value="Hibiscus">Hibiscus</option>
+                    <option value="Jasmine">Jasmine</option>
+                    <option value="Lantanus">Lantanus</option>
+                    <option value="Morning">Morning Glory</option>
+                    <option value="Rose">Rose</option>
                 </select>
             </div>
 
@@ -87,14 +87,14 @@
       </div>
       </div>
 
-      <button>Order</button>
-    </form>
+      <button type=" ">Order</button>
+        </form>
 
 
     </div>
- 
 
-<div class=" shadow underlay">
+
+    <div class=" shadow underlay">
                                 <div class="sidebar">
                                     <div class="content">
                                         <a href="./index.php" class=" ">Home</a>
