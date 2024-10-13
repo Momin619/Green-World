@@ -51,6 +51,9 @@
         color: white;
     }
 
+
+
+
     .selectors {
         position: absolute;
         top: 73%;
