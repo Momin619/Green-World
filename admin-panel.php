@@ -7,6 +7,8 @@ $shipping_address = $_POST['shipping_address'] ?? '';
 $city = $_POST['city'] ?? '';
 $indoor_plant = $_POST['indoor_plant'] ?? '';
 $outdoor_plant = $_POST['outdoor_plant'] ?? '';
+$delivery_option = $_POST['delivery_option'] ?? '';
+
 // Debugging: Output the form data to make sure they are captured correctly
 
 // Establish a connection to the database
@@ -18,8 +20,8 @@ if (!$connection) {
 }
 
 // SQL query to insert data into the correct table
-$query = "INSERT INTO `order-information` (`Full_Name`, `Email`, `Phone_Number`, `Shipping_Address`, `City`,`indoor_plant`,`outdoor_plant`) 
-          VALUES ('$fullname', '$email', '$phone_number', '$shipping_address', '$city','{$indoor_plant}','{$outdoor_plant}')";
+$query = "INSERT INTO `order-information` (`Full_Name`, `Email`, `Phone_Number`, `Shipping_Address`, `City`,`indoor_plant`,`outdoor_plant`,`Delivery_option`) 
+          VALUES ('$fullname', '$email', '$phone_number', '$shipping_address', '$city','{$indoor_plant}','{$outdoor_plant}','{$delivery_option}')";
 
 // Execute the query
 if (mysqli_query($connection, $query)) {
@@ -49,6 +51,7 @@ if (mysqli_num_rows($new_connect) > 0) {
                 <th>City</th>
                 <th>Indoor Plant</th>
                 <th>Outdoor Plant</th>
+                <th>Delivery Option</th>
             </tr>
           </thead>
           <tbody>";
@@ -62,6 +65,7 @@ if (mysqli_num_rows($new_connect) > 0) {
                 <td>{$row['City']}</td>
                 <td>{$row['indoor_plant']}</td> 
                 <td>{$row['outdoor_plant']}</td>
+                <td>{$row['Delivery_option']}</td>
               </tr>";
     }
 
@@ -78,9 +82,8 @@ mysqli_close($connection);
 <html lang="en">
 
 <head>
-    <link rel="icon"
-        href="/pics/a_cool_logo_for_a_plant_website_with_a_title_of_green_world_and_a_background_of_65cf66.jpeg">
 
+    <link rel="icon" href="./pics/1325115.png">
     <link rel="stylesheet" href="./admin-panel.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

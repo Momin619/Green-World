@@ -165,3 +165,20 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
     }, 300); // Duration should match the CSS transition
   });
 });
+
+// js for capitalizing input field text
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      const inputFields = document.querySelectorAll(".capitalize-input");
+
+      inputFields.forEach(function (inputField) {
+        inputField.addEventListener("input", function () {
+          this.value = this.value.toUpperCase();
+        });
+      });
+    });
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});
