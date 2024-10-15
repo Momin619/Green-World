@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./components.css">
-    <link rel="icon" href="pics/a_cool_logo_of_a_plant_website_for_menu_bar_with_title_green_world.jpeg">
+    <link rel="icon" href="logo-pics\tree.png">
 
     <link rel="stylesheet" href="./products.css" />
 

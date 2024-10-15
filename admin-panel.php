@@ -83,11 +83,11 @@ mysqli_close($connection);
 
 <head>
 
-    <link rel="icon" href="./pics/1325115.png">
+    <link rel="icon" href="logo-pics/tree.png">
     <link rel="stylesheet" href="./admin-panel.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-panel</title>
+    <title>Admin-Panel</title>
 </head>
 
 <body>
