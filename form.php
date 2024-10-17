@@ -113,8 +113,10 @@
 
         <img src="Files/green-leaves-plant-aesthetic-5k-3840x2160-3559.jpg" alt="" width="400px">
     </div>
+
+
     <div class="form">
-        <form action="./admin-panel.php" method="post">
+        <form action="./order-information.php" method="post" class="form_1">
 
             <div class="heading">
                 <h1>Order Your Plants</h1>
@@ -245,6 +247,30 @@
         document.getElementById(option.toLowerCase()).classList.add('selected');
     }
     </script>
+
+    <script>
+    // This will reset the form when the page loads
+    window.onload = function() {
+        document.querySelector('form_1').reset();
+    };
+    </script>
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
